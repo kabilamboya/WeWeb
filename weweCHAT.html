@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Demo Website</title>
+    <link rel="stylesheet" href="wewe.css">
+</head>
+<body>
+    <header>
+        <h1>Chat</h1>
+    </header>
+    <main class="chat-container">
+        <div class="chat-sidebar">
+            <div class="profile-section">
+                <img src="R.jpg" alt="Profile Picture" class="profile-picture">
+                <div class="profile-details">
+                    <div class="profile-field">
+                        <span id="profile-name">Rawlings Opeywa Ambani</span>
+                        <button class="edit-button" onclick="editField('profile-name')">Edit</button>
+                    </div>
+                    <div class="profile-field">
+                        <span id="profile-title">Growth Engineer</span>
+                        <button class="edit-button" onclick="editField('profile-title')">Edit</button>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li class="chat-user">Laurent</li>
+                <li class="chat-user">Kabila</li>
+                <li class="chat-user">Mboya</li>
+            </ul>
+        </div>
+        <div class="chat-content">
+            <div class="chat-messages">
+                <div class="message received">
+                    <p>Hey there!</p>
+                    <span>9:00 AM</span>
+                </div>
+                <div class="message sent">
+                    <p>Hi! How are you?</p>
+                    <span>9:05 AM</span>
+                </div>
+                <div class="message received">
+                    <p>I'm good, thanks! How about you?</p>
+                    <span>9:06 AM</span>
+                </div>
+                <div class="message sent">
+                    <p>I'm doing well too!</p>
+                    <span>9:07 AM</span>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type a message">
+                <button>Send</button>
+            </div>
+        </div>
+    </main>
+    <script src="wewe.js"></script>
+</body>
+</html>
